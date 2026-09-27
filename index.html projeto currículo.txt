@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Hildeberto Jurumenha</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Courier New', Courier, monospace, Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #222;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .cv-container {
+            background: #ffffff;
+            width: 100%;
+            max-width: 900px;
+            padding: 50px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+        }
+
+        /* Cabeçalho e Identidade */
+        .header {
+            grid-column: 1 / -1;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        .avatar-box {
+            background-color: #f5d033;
+            color: #111;
+            font-size: 28px;
+            font-weight: bold;
+            width: 70px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            letter-spacing: -1px;
+        }
+
+        .header-info h1 {
+            font-size: 24px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #111;
+            margin-bottom: 5px;
+        }
+
+        .header-info p {
+            font-size: 14px;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Seções e Tipografia */
+        section h2 {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #888;
+            letter-spacing: 1.5px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #eaeaea;
+            padding-bottom: 5px;
+        }
+
+        .about-text {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 30px;
+            grid-column: 1 / -1;
+        }
+
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .job-item, .edu-item {
+            margin-bottom: 20px;
+        }
+
+        .job-item span, .edu-item span {
+            font-size: 12px;
+            color: #777;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        .job-item h3, .edu-item h3 {
+            font-size: 15px;
+            color: #111;
+            margin-bottom: 4px;
+        }
+
+        .job-item p, .edu-item p {
+            font-size: 13px;
+            color: #555;
+            line-height: 1.4;
+        }
+
+        @media (max-width: 768px) {
+            .cv-container {
+                grid-template-columns: 1fr;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cv-container">
+        <!-- Cabeçalho com Iniciais HJ -->
+        header class="header">
+            <div class="avatar-box">HJ</div>
+            <div class="header-info">
+                <h1>HILDEBERTO JURUMENHA</h1>
+                <p>Estudante de Sistemas de Informação | Desenvolvedor de Software</p>
+            </div>
+        </header>
+
+        <!-- Perfil / Resumo -->
+        <div class="about-text">
+            Estudante dedicado de Sistemas de Informação no 4º semestre, focado no desenvolvimento de software, modelagem de bancos de dados e automação de processos. Profissional analítico, adaptável e comprometido com a entrega de soluções tecnológicas eficientes, unindo sólida base lógica e experiência prática no mercado.
+        </div>
+
+        <!-- Coluna Principal (Experiências) -->
+        <div class="main-content">
+            <section>
+                <h2>Experiências Profissionais</h2>
+                
+                <div class="job-item">
+                    <span>Presente</span>
+                    <h3>Farmácia Santana Manipulações</h3>
+                    <p>Atuação em rotinas operacionais e atendimento, desenvolvendo forte capacidade de organização, precisão de processos, comunicação assertiva e resolução ágil de problemas em ambiente dinâmico.</p>
+                </div>
+
+                <div class="job-item">
+                    <span>Projetos Acadêmicos</span>
+                    <h3>Desenvolvimento Backend & Sistemas Web</h3>
+                    <p>Implementação de sistemas de gestão e controle utilizando arquiteturas limpas, modelagem em PostgreSQL, manipulação de dados via PHP/JavaScript e estruturação de rotinas lógicas voltadas à usabilidade.</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- Coluna Lateral (Educação e Habilidades) -->
+        <div class="sidebar">
+            <section>
+                <h2>Educação</h2>
+                
+                <div class="edu-item">
+                    <span>4º Semestre</span>
+                    <h3>Sistemas de Informação</h3>
+                    <p>Graduação voltada para engenharia de software, arquitetura de sistemas e gestão de dados.</p>
+                </div>
+
+                <div class="edu-item">
+                    <span>Foco Acadêmico</span>
+                    <h3>Competências Técnicas</h3>
+                    <p>Algoritmos, Estrutura de Dados, Banco de Dados Relacional, Engenharia de Requisitos e Programação Web.</p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+</body>
+</html>
